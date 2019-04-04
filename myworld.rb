@@ -319,7 +319,7 @@ end
 puts "Search Again?"
 again = gets.chomp
 if again == 'No' then
-puts "Press RETURN when you're done."
+puts "Press RETURN to exit."
 gets
 else
 end
