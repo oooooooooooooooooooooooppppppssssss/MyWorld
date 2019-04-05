@@ -346,7 +346,18 @@ files.each do |file|
   puts "#{file.casenum} #{file.name} Sex: #{file.sex} Country: #{file.country} Drug Score: #{file.druguse} Age: #{file.age} "
 end
 #Grabs every patient file/case from the files array and prints its information
-
+puts "Endangered List"
+files.each do |file|
+  if file.age >= 18 and file.druguse >= 8 then
+     puts "#{file.casenum} #{file.name} Sex: #{file.sex} Country: #{file.country} Drug Score: #{file.druguse} Age: #{file.age} "
+else
+end
+puts "Juvenile Endangered List"
+files.each do |file|
+  if file.age < 18 and file.druguse >= 8 then
+     puts "#{file.casenum} #{file.name} Sex: #{file.sex} Country: #{file.country} Drug Score: #{file.druguse} Age: #{file.age} "
+else
+end
 #Allows User to Search the dataset of paients by country
 again = 'Yes'
 while again == 'Yes' do
