@@ -58,6 +58,7 @@ female = "Female".red
  maleperc += 1
     #adds '1' to the male percentage variable
  end
+    
  #Array of Countries (Including some wacky ones)
 countries = [
   "Afghanistan",
